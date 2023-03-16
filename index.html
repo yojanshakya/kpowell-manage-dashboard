@@ -15,16 +15,20 @@
     <script src="./index.js" defer></script>
   </head>
   <body>
-    <header class="primary-header padding-block-900">
+    <header class="primary-header">
       <div class="container">
-        <div class="nav-overlay hidden">
-        </div>
+        <div class="nav-overlay hidden"></div>
         <a class="logo" href="#">
           <img src="./images/logo.svg" alt="Manage" />
         </a>
         <nav class="primary-navigation sm-hidden" aria-hidden="true">
-          <button id="nav-close" type="button" class="nav-toggle" aria-controls="nav">
-            <img  src="./images/icon-close.svg"/>
+          <button
+            id="nav-close"
+            type="button"
+            class="nav-toggle"
+            aria-controls="nav"
+          >
+            <img src="./images/icon-close.svg" />
           </button>
           <ul aria-label="primary" role="list" class="nav-list">
             <li><a href="#">Pricing</a></li>
@@ -34,17 +38,22 @@
             <li><a href="#">Community</a></li>
           </ul>
         </nav>
-        <button id="nav-open" type="button" class="nav-toggle" aria-controls="nav">
-          <img src="./images/icon-hamburger.svg"/>
+        <button
+          id="nav-open"
+          type="button"
+          class="nav-toggle"
+          aria-controls="nav"
+        >
+          <img src="./images/icon-hamburger.svg" />
         </button>
-        <button class="button sm-hidden" >Get Started</button>
+        <button class="button button-glow sm-hidden">Get Started</button>
       </div>
     </header>
     <main>
-      <section id="intro"  class="padding-block-700">
+      <section id="intro" >
         <div class="container">
-          <div class="even-columns">
-            <div>
+          <div class="even-columns hero">
+            <div class="flow ">
               <h1 class="fs-primary-heading fw-bold">
                 Bring everyone together to build better products
               </h1>
@@ -52,7 +61,9 @@
                 Manage makes it simple for software teams to plan day-to-day
                 tasks while keeping the larger team goals in view
               </p>
-              <button class="button">Get Started</button>
+              <div style="text-align: center;" >
+                <button class="button button-glow m-inline-auto">Get Started</button>
+              </div>
             </div>
             <div>
               <img src="./images/illustration-intro.svg" alt="" />
@@ -63,8 +74,8 @@
       <section id="more-info" class="padding-block-900">
         <div class="container">
           <div class="even-columns">
-            <div id="whats-different">
-              <h2 class="fs-secondary-heading fw-bold">
+            <div id="whats-different" class="text-center-sm-only flow margin-bottom-500-sm-only">
+              <h2 class="fs-secondary-heading fw-bold ">
                 What's different about Manage?
               </h2>
               <p>
@@ -72,34 +83,30 @@
                 Expedita in vero distinctio aspernatur facilis et.
               </p>
             </div>
-            <div id="other-points"> 
-              <ul aria-label="footer" class="numbered-items" role="list">
-                <li>
-                  <h3 class="fs-600 fw-bold">Track company-wide progress</h3>
+            <div id="other-points">
+              <ul aria-label="footer" class="numbered-items flow flow-700" role="list">
+                <li class="flow flow-500 flow-size-200-sm-only">
+                  <h3 class="fs-600 fw-bold numbered-items__title">Track company-wide progress</h3>
                   <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Sit veritatis quos, dolorem repellat impedit facere?
+                   psum dolor sit amet consectetur adipisicing elit. Repellat libero, est doloremque autem eaque adipisci quibusdam similique obcaecati odit voluptates hic modi commodi nulla necessitatibus consectetur, iure, tempore fuga asperiores.
                   </p>
                 </li>
-                <li>
-                  <h3 class="fs-600 fw-bold">Advanced built-in reports</h3>
+                <li class="flow flow-500 flow-size-200-sm-only">
+                  <h3 class="fs-600 fw-bold numbered-items__title">Advanced built-in reports</h3>
                   <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Sit veritatis quos, dolorem repellat impedit facere?
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, iure omnis velit incidunt vero, nisi eveniet voluptas dolorum adipisci fugit reiciendis quidem ad inventore atque?
                   </p>
                 </li>
-                <li>
-                  <h3 class="fs-600 fw-bold">
+                <li class="flow flow-500 flow-size-200-sm-only">
+                  <h3 class="fs-600 fw-bold numbered-items__title">
                     Everything you need in one place.
                   </h3>
                   <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Sit veritatis quos, dolorem repellat impedit facere?
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus iure sint omnis, officiis sit, commodi id quaerat laboriosam repudiandae facilis odio tempora esse, repellendus minima.
                   </p>
                 </li>
               </ul>
             </div>
-            
           </div>
         </div>
       </section>
@@ -147,7 +154,10 @@
         </article>
         <button class="button">Getting Started</button>
       </section>
-      <section id="cta" class="cta | bg-accent-400 text-nuetral-100 padding-block-700">
+      <section
+        id="cta"
+        class="cta | bg-accent-400 text-nuetral-100 padding-block-700"
+      >
         <div class="container">
           <div class="even-columns">
             <div>
@@ -163,43 +173,66 @@
         </div>
       </section>
     </main>
-    <footer class="bg-nuetral-900 text-nuetral-100">
+    <footer class="bg-nuetral-900 text-nuetral-100 padding-block-800">
       <div class="container">
-        <div class="even-columns">
-          <div>
+        <div class="footer">
+          <div class="footer-links">
             <a href="#">
-              <img src="./images/logo.svg" alt="Manage" />
+              <img src="./images/logo-white.svg" alt="Manage" />
             </a>
-            <ul role="list" aria-label="Social-links">
-              <li><a aria-label="facebook" href="#"></a></li>
-              <li><a aria-label="youtube" href="#"></a></li>
-              <li><a aria-label="twitter"  href="#"></a></li>
-              <li><a aria-label="pinterest"  href="#"></a></li>
-              <li><a aria-label="instagram"  href="#"></a></li>
+            <ul role="list" class="social-links" aria-label="Social-links">
+              <li>
+                <a aria-label="facebook" href="#">
+                  <img src="./images/icon-facebook.svg" />
+                </a>
+              </li>
+              <li>
+                <a aria-label="youtube" href="#"
+                  ><img src="./images/icon-youtube.svg"
+                /></a>
+              </li>
+              <li>
+                <a aria-label="twitter" href="#"
+                  ><img src="./images/icon-twitter.svg"
+                /></a>
+              </li>
+
+              <li>
+                <a aria-label="pinterest" href="#"
+                  ><img src="./images/icon-pinterest.svg"
+                /></a>
+              </li>
+
+              <li>
+                <a aria-label="instagram" href="#"
+                  ><img src="./images/icon-instagram.svg"
+                /></a>
+              </li>
             </ul>
           </div>
-          <div>
-            <nav>
-              <ul>
-                <li><a >Home</a></li>
-                <li><a  href="#">Pricing</a></li>
-                <li><a  href="#">Products</a></li>
-                <li><a  href="#">About Us</a></li>
-                <li><a  href="#">Careers</a></li>
-                <li><a  href="#">Community</a></li>
-                <li><a  href="#">Privacy Policy</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div>
-            <form>
-              <input type="email" placeholder="Updates in your inbox" />
+          <nav class="secondary-nav">
+            <ul role="list" class="secondary-nav-list">
+              <li><a>Home</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Community</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </nav>
+          <div class="newsletter">
+            <form class="newsletter-form">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Updates in your inbox"
+              />
               <button class="button">Go</button>
-              <p>Copyright 200. All right reserved</p>
             </form>
+            <!-- <p class="text-right ">Copyright 200. All right reserved</p> -->
           </div>
         </div>
-        
       </div>
     </footer>
     <script type="module" src="/main.js"></script>
